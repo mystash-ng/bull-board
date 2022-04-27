@@ -6,4 +6,5 @@ export const STATUSES = {
   failed: 'failed',
   delayed: 'delayed',
   paused: 'paused',
+  search: 'search',
 } as const;

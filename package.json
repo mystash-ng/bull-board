@@ -96,5 +96,11 @@
       "release": true
     },
     "npm": false
+  },
+  "dependencies": {
+    "@bull-board/api": "^3.10.7",
+    "@bull-board/express": "^3.10.7",
+    "formik": "^2.2.9",
+    "yup": "^0.32.11"
   }
 }

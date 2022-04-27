@@ -14,7 +14,10 @@ export function useSelectedStatuses(): SelectedStatuses {
     const status = (query.get('status') as Status) || STATUS_LIST[0];
     const queue = match ? decodeURIComponent(match?.params.name) : '';
     if (queue) {
-      setSelectedStatuses({ ...selectedStatuses, [queue]: status });
+      setSelectedStatuses({
+        ...selectedStatuses,
+        [queue]: status === 'search' ? 'latest' : status,
+      });
     }
   }, [search, pathname]);
 
