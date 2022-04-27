@@ -9,4 +9,5 @@ export const STATUS_LIST: Readonly<KeyOf<typeof STATUSES>> = [
   STATUSES.failed,
   STATUSES.delayed,
   STATUSES.paused,
+  STATUSES.search,
 ] as const;
